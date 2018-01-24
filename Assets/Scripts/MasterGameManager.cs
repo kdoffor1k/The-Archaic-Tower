@@ -20,6 +20,11 @@ public class MasterGameManager : MonoBehaviour {
 	[HideInInspector]
 	public Transform LeftHandTransform;
 
+	[HideInInspector]
+	public AssembledSpellQuickBar assembledSpellQuickBar;
+
+	public bool useQuickBarMechanics = false;
+
 
 	void Awake ()
 	{
@@ -28,6 +33,7 @@ public class MasterGameManager : MonoBehaviour {
 		gestureGameManager = GetComponent<GestureGameManager>();
 		gestureGameManager.nvrPlayer = nvrPlayer;
 		gestureGameManager.masterGameManager = this;
+		assembledSpellQuickBar = GetComponent<AssembledSpellQuickBar>();
 
 		spellEngine = GetComponent<SpellEngine>();
 		spellEngine.masterGameManager = this;

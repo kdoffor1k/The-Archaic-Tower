@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.46387327, g: 0.53522867, b: 0.6398446, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 241585807}
   - component: {fileID: 241585808}
   - component: {fileID: 241585809}
+  - component: {fileID: 241585810}
   m_Layer: 0
   m_Name: gameMananger
   m_TagString: Untagged
@@ -278,6 +279,8 @@ MonoBehaviour:
   spellEngine: {fileID: 0}
   rightHandTransform: {fileID: 0}
   LeftHandTransform: {fileID: 0}
+  assembledSpellQuickBar: {fileID: 0}
+  useQuickBarMechanics: 1
 --- !u!114 &241585809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +290,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46964b142a8b343b3919fa771e2f7294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &241585810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 241585804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51df79a11fef27241a0afa8a899cccc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!198 &440278504

@@ -209,7 +209,17 @@ public class SpellEngine : MonoBehaviour {
 
 	public void spellPartDetected (string name, float confidence, string source)
 	{
-		if (getCompleteSpellPartsNameList().Contains(name) && confidence > 0.9f)
+		if (masterGameManager.useQuickBarMechanics == true)
+		{
+			Debug.Log(name);
+			int index = masterGameManager.assembledSpellQuickBar.tempNameToListIndexForQuickBar[name];
+			Debug.Log(index);
+			foreach (string someSpellComponent in masterGameManager.assembledSpellQuickBar.quickBarSpells[index]) {
+				Debug.Log(someSpellComponent);
+				spellsQueuedUp.Enqueue(someSpellComponent);
+			}
+		}
+		else if (getCompleteSpellPartsNameList().Contains(name) && confidence > 0.9f)
 		{
 			//GameObject.Instantiate(spellCoreName2PreFab["ArrowV1"]);
 			spellsQueuedUp.Enqueue(name);
