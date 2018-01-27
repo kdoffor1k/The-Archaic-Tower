@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MainScene/MainScene.unity
+- path: Assets/Scenes/Practice Arena/Practice Arena.unity
   isLoaded: 1
   isActive: 1
