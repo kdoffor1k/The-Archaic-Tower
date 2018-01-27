@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - Persistent
   - Destination
+  - canv
   layers:
   - Default
   - TransparentFX

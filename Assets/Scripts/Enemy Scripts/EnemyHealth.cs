@@ -6,6 +6,10 @@ public class EnemyHealth : MonoBehaviour {
 
     public float startingHealth = 100f;
     public float currentHealth;
+    public int goldGained;
+    public int expGained;
+    public MasterGameManager gameManager;
+
 
     void OnTriggerEnter(Collider col)
     {
@@ -16,13 +20,6 @@ public class EnemyHealth : MonoBehaviour {
             {
                 currentHealth = currentHealth - currentHealth;
             }
-            
-            
-            
-         
-            
-
-
         }
 
     }
@@ -39,7 +36,17 @@ public class EnemyHealth : MonoBehaviour {
     // Use this for initialization
     void Start() {
         currentHealth = startingHealth;
-
+        goldGained = 100;
+        expGained = 10;
+        GameObject gameManagerObject = GameObject.FindWithTag("GameController");
+        if (gameManagerObject != null)
+        {
+            gameManager = gameManagerObject.GetComponent<MasterGameManager>();
+        }
+        else
+        {
+            Debug.Log("Cannot find gameManager.");
+        }
 
     }
 
@@ -48,6 +55,8 @@ public class EnemyHealth : MonoBehaviour {
 
         if (currentHealth <= 0)
         {
+            gameManager.addGold(goldGained);
+            gameManager.addExp(expGained);
             Destroy(gameObject);
         }
 
