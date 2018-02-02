@@ -354,6 +354,8 @@
     <Compile Include="Assets\Scripts\Spell Component Scripts\damageModifier.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\ElementalComponent.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\FireElement.cs" />
+    <Compile Include="Assets\Scripts\Spell Component Scripts\LightningCore.cs" />
+    <Compile Include="Assets\Scripts\Spell Component Scripts\MeteorCore.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\NatureElement.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\SizeModifier.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\SpeedModifier.cs" />
