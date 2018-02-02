@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
 
-        if (col.GetComponent("SpellCore") == true)
+        if (col.GetComponent<SpellCore>() == true)
         {
             if (col.tag == "Projectile")
             {
@@ -71,10 +71,3 @@ public class EnemyHealth : MonoBehaviour {
     */
 
 }
-
-    
-
-
-
-
-
