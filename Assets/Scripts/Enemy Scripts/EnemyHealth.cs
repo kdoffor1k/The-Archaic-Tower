@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour {
         {
             if (col.tag == "Projectile")
             {
-                currentHealth = currentHealth - currentHealth;
+                currentHealth = currentHealth - 100;
             }
         }
 
