@@ -5,22 +5,28 @@ using UnityEngine;
 public class PortalSize : MonoBehaviour {
     private float X, Y, Z;
     Transform player;
+ 
 
     // Use this for initialization
     void Start () {
+        player = GameObject.FindGameObjectWithTag("Destination").transform;
         float X = GetComponentInParent<EnemyManager>().enemy.transform.localScale.x;
-        
         float Y = GetComponentInParent<EnemyManager>().enemy.transform.localScale.y;
         float Z = GetComponentInParent<EnemyManager>().enemy.transform.localScale.z;
+        float X2 = X;
+        // calculates the x and y scale for portal based on emeny size
         X = X * 2;
         Y = Y * 3;
-        transform.localScale = new Vector3(X,Y, .1f);
+        //creates portal
+        transform.localScale = new Vector3(X, Y, .1f);
+        //adjusts portal postioning based on its personal size
         transform.localPosition = new Vector2(0, Y / 2);
-        player = GameObject.FindGameObjectWithTag("Destination").transform;
-        Vector3 targetPosition = new Vector3(player.position.x, this.transform.position.y, player.position.z);
+        
+        Vector3 targetPosition = new Vector3(player.position.x, transform.position.y, player.position.z);
         transform.LookAt(targetPosition);
-
        
+        //pushes the portal X2/2 units away from portal to give appearance of moving through portal
+        transform.position = Vector3.MoveTowards(transform.position, player.position, X2/2 + .1f);
 
     }
 	
