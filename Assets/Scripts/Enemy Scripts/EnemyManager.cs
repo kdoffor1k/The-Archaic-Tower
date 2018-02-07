@@ -26,9 +26,15 @@ public class EnemyManager : MonoBehaviour
     void Spawn()
     {
         enemies.RemoveAll(deadEnemy => deadEnemy == null);
-        
+
         if (enemies.Count >= limit)
+        {
+            Destroy(transform.GetChild(0).gameObject);
+            Destroy(gameObject);
             return;
+        }
+           
+            
 
         // Find a random index between zero and one less than the number of spawn points.
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
