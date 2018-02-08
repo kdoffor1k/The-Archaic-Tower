@@ -6,23 +6,13 @@ public class PortalSize : MonoBehaviour {
     private float X, Y, Z;
     Transform player;
     public List<Material> materials;
+    private int element;
 
     // Use this for initialization
     void Start () {
-        int element = Random.Range(0, 3);
-        Renderer renderer = GetComponent<Renderer>();
-        if (element == 0)
-        {
-            renderer.material = materials[element];
-        }
-        else if (element == 1)
-        {
-            renderer.material = materials[element];
-        }
-        else
-        {
-            renderer.material = materials[element];
-        }
+
+        pickElement();
+        
         player = GameObject.FindGameObjectWithTag("Destination").transform;
         float X = GetComponentInParent<EnemyManager>().enemy.transform.localScale.x;
         float Y = GetComponentInParent<EnemyManager>().enemy.transform.localScale.y;
@@ -44,6 +34,28 @@ public class PortalSize : MonoBehaviour {
 
     }
 	
-    
+    public void pickElement()
+    {
+        element = Random.Range(0, 3);
+        Renderer renderer = GetComponent<Renderer>();
+        if (element == 0)
+        {
+            renderer.material = materials[element];
+        }
+        else if (element == 1)
+        {
+            renderer.material = materials[element];
+        }
+        else
+        {
+            renderer.material = materials[element];
+        }
+    }
+
+    public int getElement()
+    {
+        return element;
+    }
+
 	
 }

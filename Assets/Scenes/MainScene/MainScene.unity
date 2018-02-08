@@ -4279,7 +4279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e7c44341433194683f9fa0a2404695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 1
+  delay: 6
   portals:
   - {fileID: 1637700074974856, guid: b28d1ca1911dec64fb9327a3bd84df60, type: 2}
   - {fileID: 1667631098491156, guid: 943485117be2e5847833343752df88e4, type: 2}
