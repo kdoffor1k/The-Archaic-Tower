@@ -4279,11 +4279,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e7c44341433194683f9fa0a2404695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 5
+  delay: 1
   portals:
-  - {fileID: 1780369358268058, guid: b28d1ca1911dec64fb9327a3bd84df60, type: 2}
-  - {fileID: 1454285431038806, guid: 943485117be2e5847833343752df88e4, type: 2}
-  - {fileID: 1479198537220976, guid: 46daa7d8f2c2c7c47b0adb366af309f8, type: 2}
-  limit: 3
+  - {fileID: 1637700074974856, guid: b28d1ca1911dec64fb9327a3bd84df60, type: 2}
+  - {fileID: 1667631098491156, guid: 943485117be2e5847833343752df88e4, type: 2}
+  - {fileID: 1490942219631630, guid: 46daa7d8f2c2c7c47b0adb366af309f8, type: 2}
+  limit: 5
   spawnPoints: []
   count: 0
