@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour
     public float delay = 3f;            // How long between each spawn.
     public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
     public float limit = 3f;
-   
+    Material m_Material; 
 
 
     private List<GameObject> enemies = new List<GameObject>();
@@ -19,7 +19,14 @@ public class EnemyManager : MonoBehaviour
     {
         // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
         InvokeRepeating("Spawn", delay, delay);
-        
+
+        int element = Random.Range(0, 3);
+
+        if (element == 0)
+        {
+            
+        }
+
     }
 
 

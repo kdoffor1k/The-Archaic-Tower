@@ -5,10 +5,24 @@ using UnityEngine;
 public class PortalSize : MonoBehaviour {
     private float X, Y, Z;
     Transform player;
- 
+    public List<Material> materials;
 
     // Use this for initialization
     void Start () {
+        int element = Random.Range(0, 3);
+        Renderer renderer = GetComponent<Renderer>();
+        if (element == 0)
+        {
+            renderer.material = materials[element];
+        }
+        else if (element == 1)
+        {
+            renderer.material = materials[element];
+        }
+        else
+        {
+            renderer.material = materials[element];
+        }
         player = GameObject.FindGameObjectWithTag("Destination").transform;
         float X = GetComponentInParent<EnemyManager>().enemy.transform.localScale.x;
         float Y = GetComponentInParent<EnemyManager>().enemy.transform.localScale.y;
