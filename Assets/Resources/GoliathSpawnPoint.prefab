@@ -141,11 +141,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18537e4a4b6bcec4dbd6812844530f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1696191443384944, guid: 091d6c87b9cc6bb4f9dc55e89aa4414f, type: 2}
+  enemy: {fileID: 1340363248892956, guid: 36e794e28b8501e478833d876b524799, type: 2}
   delay: 5
   spawnPoints:
   - {fileID: 4489800140639438}
   limit: 1
+  materials:
+  - {fileID: 2100000, guid: f646b8057fe437f49b2ce0297286abaa, type: 2}
+  - {fileID: 2100000, guid: 422d9704a81a31b478d637736df8df51, type: 2}
+  - {fileID: 2100000, guid: 12e054956c76e944da0192a7001390c3, type: 2}
 --- !u!114 &114966446201440758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,6 +165,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f646b8057fe437f49b2ce0297286abaa, type: 2}
   - {fileID: 2100000, guid: 422d9704a81a31b478d637736df8df51, type: 2}
   - {fileID: 2100000, guid: 12e054956c76e944da0192a7001390c3, type: 2}
+  element: 0
 --- !u!135 &135875901510059114
 SphereCollider:
   m_ObjectHideFlags: 1

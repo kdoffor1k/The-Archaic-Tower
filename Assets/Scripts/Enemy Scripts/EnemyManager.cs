@@ -9,7 +9,8 @@ public class EnemyManager : MonoBehaviour
     public float delay = 3f;            // How long between each spawn.
     public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
     public float limit = 3f;
-    Material m_Material; 
+    PortalSize getElement;
+    public List<Material> materials;
 
 
     private List<GameObject> enemies = new List<GameObject>();
@@ -20,13 +21,9 @@ public class EnemyManager : MonoBehaviour
         // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
         InvokeRepeating("Spawn", delay, delay);
 
-        int element = Random.Range(0, 3);
-
-        if (element == 0)
-        {
-            
-        }
-
+        getElement = GetComponentInChildren<PortalSize>();
+        
+        
     }
 
 
@@ -48,12 +45,33 @@ public class EnemyManager : MonoBehaviour
 
         // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
         GameObject obj = Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+
+        pickElement(obj);
+
+        
+
         enemies.Add(obj);
         
 
     }
 
- 
 
+    public void pickElement(GameObject obj)
+    {
+        
+        Renderer renderer = obj.GetComponent<Renderer>();
+        if (getElement.getElement() == 0)
+        {
+            renderer.material = materials[getElement.getElement()];
+        }
+        else if (getElement.getElement() == 1)
+        {
+            renderer.material = materials[getElement.getElement()];
+        }
+        else
+        {
+            renderer.material = materials[getElement.getElement()];
+        }
+    }
 
 }

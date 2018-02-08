@@ -46,7 +46,7 @@ public class PortalSpawning : MonoBehaviour {
         // Find a random index between zero and one less than the number of spawn points.
         int spawnPointIndex = Random.Range(0, spawnPoints.Count);
         int portalIndex = Random.Range(0, portals.Count);
-        print(portalIndex);
+
         GameObject portal = portals[portalIndex];
         // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
         Instantiate(portal, spawnPoints[spawnPointIndex], Quaternion.identity);
@@ -54,4 +54,6 @@ public class PortalSpawning : MonoBehaviour {
         spawnPoints.RemoveAt(spawnPointIndex);
 
     }
+
+
 }

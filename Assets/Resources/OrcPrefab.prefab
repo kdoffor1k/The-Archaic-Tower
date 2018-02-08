@@ -49,7 +49,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f646b8057fe437f49b2ce0297286abaa, type: 2}
+  - {fileID: 2100000, guid: 2fcc55e7073e6c043a7ea90252c79a7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,6 +115,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
+  goldGained: 0
+  expGained: 0
+  gameManager: {fileID: 0}
 --- !u!136 &136204960011586144
 CapsuleCollider:
   m_ObjectHideFlags: 1
