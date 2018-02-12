@@ -33,7 +33,7 @@ public class SpellCore : MonoBehaviour {
 
 	}
 
-	public void doOnCast()
+	public void DoOnCast()
 	{
 		if (gameObject.tag == "Persistent")
 		{

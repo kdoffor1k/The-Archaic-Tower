@@ -346,6 +346,7 @@
     <Compile Include="Assets\NewtonVR\SteamVR\NVRSteamVRInputDevice.cs" />
     <Compile Include="Assets\NewtonVR\SteamVR\NVRSteamVRIntegration.cs" />
     <Compile Include="Assets\Scripts\AssembledSpellQuickBar.cs" />
+    <Compile Include="Assets\Scripts\effects\LightningStrikeDecay.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyMovement.cs" />

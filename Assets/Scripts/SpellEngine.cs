@@ -133,7 +133,8 @@ public class SpellEngine : MonoBehaviour {
 								}
 
 								craftedSpell.GetComponent<SpellCore>().hasItBeenCastedYet = true;
-								craftedSpell.GetComponent<SpellCore>().doOnCast();
+								//craftedSpell.GetComponent<SpellCore>().doOnCast();
+								craftedSpell.SendMessage("DoOnCast");
 								craftedSpell = null;
 								hasCoreBeenCraftedYet = false;
 								hasElementBeenCraftedYet = false;

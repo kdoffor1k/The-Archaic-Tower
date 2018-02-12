@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33808020277716762}
   - component: {fileID: 136485813571222962}
   - component: {fileID: 23741478262633506}
+  - component: {fileID: 114319058816122126}
   m_Layer: 0
   m_Name: LightningStrike
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1026994660517858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -25.656055, y: 2.8519244, z: -6.259806}
   m_LocalScale: {x: 3.6977327, y: 42.778477, z: 3.6977339}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,6 +84,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1026994660517858}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114319058816122126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1026994660517858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb7bcd40c738504dbd5e17a07bdbfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMulti: 1
+  speedMulti: 1
+  livingTime: 100
+  livingTimeDecay: 1
+  hasItBeenCastedYet: 1
 --- !u!136 &136485813571222962
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -90,7 +107,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1026994660517858}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
