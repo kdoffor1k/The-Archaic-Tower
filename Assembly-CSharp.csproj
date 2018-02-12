@@ -115,6 +115,8 @@
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\PortalSize.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\PortalSpawning.cs" />
      <Compile Include="Assets\Scripts\GestureGameManager.cs" />
      <Compile Include="Assets\Scripts\MasterGameManager.cs" />
      <Compile Include="Assets\Scripts\Spell Component Scripts\damageModifier.cs" />
