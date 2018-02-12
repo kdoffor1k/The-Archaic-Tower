@@ -346,6 +346,7 @@
     <Compile Include="Assets\NewtonVR\SteamVR\NVRSteamVRInputDevice.cs" />
     <Compile Include="Assets\NewtonVR\SteamVR\NVRSteamVRIntegration.cs" />
     <Compile Include="Assets\Scripts\AssembledSpellQuickBar.cs" />
+    <Compile Include="Assets\Scripts\effects\LightningStrikeDecay.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyMovement.cs" />
@@ -354,6 +355,8 @@
     <Compile Include="Assets\Scripts\Spell Component Scripts\damageModifier.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\ElementalComponent.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\FireElement.cs" />
+    <Compile Include="Assets\Scripts\Spell Component Scripts\LightningCore.cs" />
+    <Compile Include="Assets\Scripts\Spell Component Scripts\MeteorCore.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\NatureElement.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\SizeModifier.cs" />
     <Compile Include="Assets\Scripts\Spell Component Scripts\SpeedModifier.cs" />

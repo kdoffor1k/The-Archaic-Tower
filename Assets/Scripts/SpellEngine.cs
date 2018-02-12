@@ -11,7 +11,7 @@ public class SpellEngine : MonoBehaviour {
 	private List<string> spellComponentNames = new List<string> {"FireV1", "WaterV1", "NatureV1", "DamageV1", "SizeV1", "SpeedV1"};
 
 	//[HideInInspector]
-	private List<string> spellCoreNames = new List<string> {"ArrowV1", "ShieldV1", "BeamV1"};
+	private List<string> spellCoreNames = new List<string> {"ArrowV1", "ShieldV1", "BeamV1", "LightningV1"};
 
 
 	private Dictionary<string, SpellComponent> spellComponentName2UnityComponent = new Dictionary<string, SpellComponent>();
@@ -37,6 +37,7 @@ public class SpellEngine : MonoBehaviour {
 		spellCoreName2PreFab.Add("ArrowV1", (GameObject) Resources.Load("ArrowPrefab", typeof(GameObject)));
 		spellCoreName2PreFab.Add("ShieldV1", (GameObject) Resources.Load("ShieldPrefab", typeof(GameObject)));
 		spellCoreName2PreFab.Add("BeamV1", (GameObject) Resources.Load("BeamPrefab", typeof(GameObject)));
+		spellCoreName2PreFab.Add("LightningV1", (GameObject) Resources.Load("LightningPrefab", typeof(GameObject)));
 
 
 		spellComponentName2UnityComponent.Add("FireV1", new FireElement());
@@ -127,11 +128,13 @@ public class SpellEngine : MonoBehaviour {
 								if(craftedSpell.tag == "Projectile")
 								{
 									craftedSpell.GetComponent<Rigidbody>().useGravity = true;
+									craftedSpell.GetComponent<Rigidbody>().velocity = craftedSpell.transform.up * 20f * craftedSpell.GetComponent<SpellCore>().speedMulti;
+									craftedSpell.GetComponent<Rigidbody>().isKinematic = false;
 								}
-								craftedSpell.GetComponent<Rigidbody>().isKinematic = false;
-								craftedSpell.GetComponent<Rigidbody>().velocity = craftedSpell.transform.up * 20f * craftedSpell.GetComponent<SpellCore>().speedMulti;
+
 								craftedSpell.GetComponent<SpellCore>().hasItBeenCastedYet = true;
-								craftedSpell.GetComponent<SpellCore>().doOnCast();
+								//craftedSpell.GetComponent<SpellCore>().doOnCast();
+								craftedSpell.SendMessage("DoOnCast");
 								craftedSpell = null;
 								hasCoreBeenCraftedYet = false;
 								hasElementBeenCraftedYet = false;

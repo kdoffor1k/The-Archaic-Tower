@@ -14,7 +14,8 @@ public class AssembledSpellQuickBar : MonoBehaviour {
     quickBarSpells = new List<List<string>>();
     quickBarSpells.Add(new List<string>(new string[] { "ArrowV1", "FireV1" }));
     quickBarSpells.Add(new List<string>(new string[] { "ArrowV1", "FireV1", "SizeV1", "SizeV1", "SizeV1", "SizeV1" }));
-    quickBarSpells.Add(new List<string>(new string[] { "ShieldV1" }));
+    //quickBarSpells.Add(new List<string>(new string[] { "ShieldV1" }));
+    quickBarSpells.Add(new List<string>(new string[] { "LightningV1", "WaterV1" }));
 
     tempNameToListIndexForQuickBar = new Dictionary<string, int>();
     tempNameToListIndexForQuickBar.Add("ArrowV1", 0);
