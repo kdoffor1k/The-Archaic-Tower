@@ -1,0 +1,7 @@
+ArrowV1,BeamV1,ShockWaveV1,MeteorShowerV1,MagicBallV1,LightningV1,ShieldV1,WallV1,SummonGolemsV1
+ExplosionV1,NatureV1,WaterV1,FireV1,PoisonV1,DamageV1,SizeV1,SpeedV1,MultiplierV1,Add1V1,GravityV1,ParalyzeV1,SlowV1|
+ArrowV1
+MeteorShowerV1,WaterV1|
+27000,2990,2856,3200|
+4|
+
