@@ -3,7 +3,7 @@
 
 
 ## Installation Guide:
-### rerequisites:
+### Prerequisites:
 **Hardware**
 OS: Windows 7 SP1+, 8, 10, 64-bit versions only; Mac OS X 10.9+. 
 CPU: Intel® Core™ i7-6700 Processor, equivalent or better
@@ -12,12 +12,13 @@ Virtual Reality System: HTC Vive headset & 2 HTC Vive Controllers
 
 **Software**
 
-Unity 2017.3.0+
+- Unity 2017.3.0+
 
 **Dependent libraries that must be installed:**
-SteamVR (Most recent release)
 
-All other dependencies are already included in release directory
+- SteamVR (Most recent release)
+
+- All other dependencies are already included in release directory
 
 
 
