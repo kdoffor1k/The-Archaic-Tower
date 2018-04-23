@@ -2,7 +2,7 @@
 
 
 
-Installation Guide: 
+**Installation Guide:** 
 Prerequisites:
 Hardware
 OS: Windows 7 SP1+, 8, 10, 64-bit versions only; Mac OS X 10.9+. 
