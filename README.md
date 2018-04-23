@@ -14,7 +14,7 @@ Virtual Reality System: HTC Vive headset & 2 HTC Vive Controllers
 Unity 2017.3.0+
 
 **Dependent libraries that must be installed:**
--SteamVR (Most recent release)
+_SteamVR (Most recent release)
 All other dependencies are already included in release directory
 
 
