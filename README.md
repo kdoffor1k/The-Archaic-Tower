@@ -36,106 +36,107 @@
 
 #### Full List of all Spell Components:
 - Elements 
- - Fire
- - Water
- - Nature
+  - Fire
+  - Water
+  - Nature
 - Core 
- - Arrow
- - Shield
- - Beam
- - Meteor shower
- - Lightning
- - Gravity ball
- - Walls
- - Summon defender golems 
- - Shockwave 
+  - Arrow
+  - Shield
+  - Beam
+  - Meteor shower
+  - Lightning
+  - Gravity ball
+  - Walls
+  - Summon defender golems 
+  - Shockwave 
 - Modifiers
- - Size
- - Damage
- - Speed
- - Gravity (pulls enemies in)
- - Multiplier (double the amount, 2 arrows -> 4 arrows)
- - Poison 
- - Explosion 
- - Paralyze 
+  - Size
+  - Damage
+  - Speed
+  - Gravity (pulls enemies in)
+  - Multiplier (double the amount, 2 arrows -> 4 arrows)
+  - Poison 
+  - Explosion 
+  - Paralyze 
 
-Bugs Fixed Since Last Sprint:
-Enemies randomly running away from tower.
-Enemies being thrown out of map after being hit by gravity modifier
-Portals randomly increase to gigantic size
-Portals keep spawning enemies even after game says you've won.
-After towers health reached zero, game would still advance to next level 
-Enemies all spawn with the same element attached
-Meteor Shower portal spawned on ground instead of in the air
-Arrow not being casted when in the first quickbar slot
-player was flipped around when switching scenes
-Spells would break if where not ordered correctly in the crafting menu
-Player could erase spells from the quick bar while in level
-Player could return to lab button while a level is playing
-Going back to wizard tower directional light would not be counted for rendering, causing the scene to become extremely dark
-GUI would be hidden if was inside an object
-Several attributes were not saved correctly in the save data.
-Gold shop did not shows price to upgrade tower
-Controller UI cursor gets drawn behind the UI elements
-Multiplier modifier would put the spell too high
-Multiplier modifier would always place the second copy in the same place as the first copy
-Gravity modifier caused the spell to despawn before dealing damage
-Meteor shower cloud would  spawn on the floor
-Meteor shower used to have graphical anomalies.
-Arrow prefab was pointing the wrong way and colliders were not set correctly
-Assembled spell quickbar UI was too low, always dragged on the floor
+#### Bugs Fixed Since Last Sprint:
+- Enemies randomly running away from tower.
+- Enemies being thrown out of map after being hit by gravity modifier
+- Portals randomly increase to gigantic size
+- Portals keep spawning enemies even after game says you've won.
+- After towers health reached zero, game would still advance to next level 
+- Enemies all spawn with the same element attached
+- Meteor Shower portal spawned on ground instead of in the air
+- Arrow not being casted when in the first quickbar slot
+- Player was flipped around when switching scenes
+- Spells would break if where not ordered correctly in the crafting menu
+- Player could erase spells from the quick bar while in level
+- Player could return to lab button while a level is playing
+- Going back to wizard tower directional light would not be counted for rendering, causing the scene to become extremely dark
+- GUI would be hidden if was inside an object
+- Several attributes were not saved correctly in the save data.
+- Gold shop did not shows price to upgrade tower
+- Controller UI cursor gets drawn behind the UI elements
+- Multiplier modifier would put the spell too high
+- Multiplier modifier would always place the second copy in the same place as the first copy
+- Gravity modifier caused the spell to despawn before dealing damage
+- Meteor shower cloud would  spawn on the floor
+- Meteor shower used to have graphical anomalies.
+- Arrow prefab was pointing the wrong way and colliders were not set correctly
+- Assembled spell quickbar UI was too low, always dragged on the floor
 
-Known Bugs: 
-Player can place spells inside the tower
-Player can draw a spell while already having one ready to fire (causes spell effects to stack)
-Game sometimes says player has beaten level even though there are still portals up, causing new enemies to spawn after the level is declared over
-one component spells will sometime not be cast due to a problem reading them from the save data writer reader
-Very very rarely a beam prefab ill appear around the controller when saving spells
-A paralyzed enemy never moves again
-Haptic feedback is inconsistent, will not happen if enemy is killed in one shot
-Very rarely magic ball will shoot off in a random direction
-Shockwave spell does not instantiate, probably a problem with the shockwave prefab
+#### Known Bugs: 
+- Player can place spells inside the tower
+- Player can draw a spell while already having one ready to fire (causes spell effects to stack)
+- Game sometimes says player has beaten level even though there are still portals up, causing new enemies to spawn after the -level is declared over
+- One component spells will sometime not be cast due to a problem reading them from the save data writer reader
+- Very very rarely a beam prefab ill appear around the controller when saving spells
+- A paralyzed enemy never moves again
+- Haptic feedback is inconsistent, will not happen if enemy is killed in one shot
+- Very rarely magic ball will shoot off in a random direction
+- Shockwave spell does not instantiate, probably a problem with the shockwave prefab
 
 
-Installation Guide: 
-Prerequisites:
-Hardware
+## Installation Guide: 
+### Prerequisites:
+#### Hardware
 OS: Windows 7 SP1+, 8, 10, 64-bit versions only; Mac OS X 10.9+. 
 CPU: Intel® Core™ i7-6700 Processor, equivalent or better
 GPU: NVIDIA GeForce™ GTX 970, equivalent or better
 Virtual Reality System: HTC Vive headset, 2 HTC Vive Controllers, 2 HTC Vive lighthouses (set up correctly)
 
-Software
-Unity 2017.3.0+
+#### Software
+- Unity 2017.3.0+
 
-Dependent libraries that must be installed:​ 
-SteamVR (Most recent release)
-All other dependencies are already included in release directory
-
-
-
-Download instructions:​ 
-To download our project click on the green “clone or download” button near the right top of the screen on our Github repository (or from direct link to google drive https://drive.google.com/file/d/1uWjeS--5SZFSLLLGgadBEsi0rQWvn0DQ/view?usp=sharing).
-Choose to download the .zip file 
-Extract the file to the location of your Unity projects folder. 
-
-Installation of actual application and Running App:
-Download Unity: https://store.unity.com/download?ref=personal
-Open UnityDownloadAssistant
-Select highlighted components:
-
-Setup HTC Vive: https://support.steampowered.com/steamvr/HTC_Vive/
-NOTE: this is the most fragile part of the insulation process, make sure to get your computer to recognize the VIVE headset as well as make sure your area is set up for VR and configured correctly. 
-Open Unity
-Select the “Open” option in the top right toolbar
-Select project archive and launch the project
+### Dependent libraries that must be installed:​ 
+- SteamVR (Most recent release)
+- All other dependencies are already included in release directory
 
 
-Troubleshooting:
 
-Steam VR Help Page: https://support.steampowered.com/kb_article.php?ref=8566-SDZC-9326
-Unity Support Page:
- 	https://unity3d.com/learn/support
-HTC VIVE Support Page:
-	https://www.vive.com/us/support/vive/
+### Download instructions:​ 
+- To download our project click on the green “clone or download” button near the right top of the screen on our Github repository (or from direct link to google drive https://drive.google.com/file/d/1uWjeS--5SZFSLLLGgadBEsi0rQWvn0DQ/view?usp=sharing).
+- Choose to download the .zip file 
+- Extract the file to the location of your Unity projects folder. 
+
+### Installation of actual application and Running App:
+- Download Unity: https://store.unity.com/download?ref=personal
+- Open UnityDownloadAssistant
+- Select highlighted components:
+
+- Setup HTC Vive: https://support.steampowered.com/steamvr/HTC_Vive/
+  - NOTE: this is the most fragile part of the installation process, make sure to get your computer to recognize the VIVE headset as well as make sure your area is set up for VR and configured correctly. 
+- Open Unity
+- Select the “Open” option in the top right toolbar
+- Select project archive and launch the project
+
+
+### Troubleshooting:
+
+#### Steam VR Help Page: 
+- https://support.steampowered.com/kb_article.php?ref=8566-SDZC-9326
+#### Unity Support Page:
+- https://unity3d.com/learn/support
+#### HTC VIVE Support Page:
+- https://www.vive.com/us/support/vive/
 
