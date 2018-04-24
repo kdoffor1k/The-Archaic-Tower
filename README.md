@@ -10,9 +10,9 @@
 - EXP Shop Menu is located in front of the bookshelf and comprised of spell components that the player can purchase by losing the correct amount of EXP. This allows their purchased spell components to be visible within the spell crafter menu and available to use when assembling spells.
 
 - Spell Crafter Menu located above the caudron is initially comprised of only the arrow spell given to the user. To obtain more spells in the spell crafter, the player must purchase items in the Experience Shop. By clicking on items available in a player’s Spell Crafter Menu, a player is able to assemble new spells. Spell components that are chosen appear on the empty canvas on the menu, and when the player clicks save the spells are added to their hotbar. Spell combinations are restricted to the guidelines listed below:
- - Must have one Spell Core.
- - At most One Spell Element.
- - Multiple Spell Modifiers, with Multiples of the same type.
+  - Must have one Spell Core.
+  - At most One Spell Element.
+  - Multiple Spell Modifiers, with Multiples of the same type.
 - Go to practice scene, Leave Wizard Lab, leave the tower, and go to practice arena allows a player to teleport to different scenes within the game. 
 #### Assembled Spells Inventory Management:
 - Hot Bar is a feature allowing a player to have a limited number of spells they can bring into battle. The hot bar is comprised of four slots that are filled with each spell combination you saved when assembling spells in the spell crafter menu. The Hot Bar is shown in the bottom of the player’s field of view at all times.
