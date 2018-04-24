@@ -10,55 +10,54 @@
 - EXP Shop Menu is located in front of the bookshelf and comprised of spell components that the player can purchase by losing the correct amount of EXP. This allows their purchased spell components to be visible within the spell crafter menu and available to use when assembling spells.
 
 - Spell Crafter Menu located above the caudron is initially comprised of only the arrow spell given to the user. To obtain more spells in the spell crafter, the player must purchase items in the Experience Shop. By clicking on items available in a player’s Spell Crafter Menu, a player is able to assemble new spells. Spell components that are chosen appear on the empty canvas on the menu, and when the player clicks save the spells are added to their hotbar. Spell combinations are restricted to the guidelines listed below:
-Must have one Spell Core.
-At most One Spell Element.
-Multiple Spell Modifiers, with Multiples of the same type.
-Go to practice scene, Leave Wizard Lab, leave the tower, and go to practice arena allows a player to teleport to different scenes within the game. 
-Assembled Spells Inventory Management:
-Hot Bar is a feature allowing a player to have a limited number of spells they can bring into battle. The hot bar is comprised of four slots that are filled with each spell combination you saved when assembling spells in the spell crafter menu. The Hot Bar is shown in the bottom of the player’s field of view at all times.
-Top of Tower:
-Tower Health is visible within the tower to the left of the main window, where the player can easily view when defending the tower from upcoming enemies.
-When completing a level a script will appear in front of the main window in the tower urging the user to click on the button below the script to be transported to the wizard lab. 
-When clearing a wave of enemies a text will appear in front of the main window of the tower urging the player to either click the button below the text to move on to the next wave of enemies or leave the tower.
-Enemies:
-Enemies and their corresponding portals are color coded based on their elemental alignment of either fire, nature, or water.
-Attacking Enemies is based of a rock, paper, scissors methodology corresponding with the elemental alignments of fire, nature, and water (fire beats nature, nature beats water, water beats fire). When choosing spell elements a player needs to think about the type of elemental alignments the enemies might have in the game. This way the player can use an appropriate spell element against the correct enemy in order to deal damage to that enemy.  
-Enemies are spawned based on the player’s behavior. When players assemble spells with one spell element more so than the others, portals of a certain elemental alignment will be made to counteract the player’s behavior by forcing them to switch up their assembled spells. For example, if a pyromaniac player casts nothing but fire spells, they will be faced with a plethora of water enemies.
-Enemies can deal damage to tower.
-EXP and Gold:
-A player can gain EXP and Gold by defeating enemies.
-EXP can be used to purchase new spell components from the EXP shop that will then appear on the spell crafter menu where you can use them for assembling spells.
-Gold is used to upgrade the tower health when in between levels using the gold shop in the wizard lab.
-Gestures: 
-Each slot in a players quick bar has a corresponding gesture to it in either the shape of a line, circle, or upside down triangle. These gestures are used to cast the assembled spells from the player’s hotbar.
-Practice Arena:
-Test out new assembled spells to see how they pair up against other spells a player has made.
+ - Must have one Spell Core.
+ - At most One Spell Element.
+ - Multiple Spell Modifiers, with Multiples of the same type.
+- Go to practice scene, Leave Wizard Lab, leave the tower, and go to practice arena allows a player to teleport to different scenes within the game. 
+#### Assembled Spells Inventory Management:
+- Hot Bar is a feature allowing a player to have a limited number of spells they can bring into battle. The hot bar is comprised of four slots that are filled with each spell combination you saved when assembling spells in the spell crafter menu. The Hot Bar is shown in the bottom of the player’s field of view at all times.
+#### Top of Tower:
+- Tower Health is visible within the tower to the left of the main window, where the player can easily view when defending the tower from upcoming enemies.
+- When completing a level a script will appear in front of the main window in the tower urging the user to click on the button below the script to be transported to the wizard lab. 
+- When clearing a wave of enemies a text will appear in front of the main window of the tower urging the player to either click the button below the text to move on to the next wave of enemies or leave the tower.
+#### Enemies:
+- Enemies and their corresponding portals are color coded based on their elemental alignment of either fire, nature, or water.
+- Attacking Enemies is based of a rock, paper, scissors methodology corresponding with the elemental alignments of fire, nature, and water (fire beats nature, nature beats water, water beats fire). When choosing spell elements a player needs to think about the type of elemental alignments the enemies might have in the game. This way the player can use an appropriate spell element against the correct enemy in order to deal damage to that enemy.  
+- Enemies are spawned based on the player’s behavior. When players assemble spells with one spell element more so than the others, portals of a certain elemental alignment will be made to counteract the player’s behavior by forcing them to switch up their assembled spells. For example, if a pyromaniac player casts nothing but fire spells, they will be faced with a plethora of water enemies.
+- Enemies can deal damage to tower.
+#### EXP and Gold:
+- A player can gain EXP and Gold by defeating enemies.
+- EXP can be used to purchase new spell components from the EXP shop that will then appear on the spell crafter menu where you can use them for assembling spells.
+- Gold is used to upgrade the tower health when in between levels using the gold shop in the wizard lab.
+#### Gestures: 
+- Each slot in a players quick bar has a corresponding gesture to it in either the shape of a line, circle, or upside down triangle. These gestures are used to cast the assembled spells from the player’s hotbar.
+#### Practice Arena:
+- Test out new assembled spells to see how they pair up against other spells a player has made.
 
- Full List of all Spell Components:
-Elements 
-Fire
-Water
-Nature
-Core 
-Arrow
-Shield
-Beam
-Meteor shower
-Lightning
-Gravity ball
-Walls
-Summon defender golems 
-Shockwave 
-Modifyers
-Size
-Damage
-Speed
-Gravity (pulls enemies in)
-Multiplier (double the amount, 2 arrows -> 4 arrows)
-
-Poison 
-Explosion 
-Paralyze 
+#### Full List of all Spell Components:
+- Elements 
+ - Fire
+ - Water
+ - Nature
+- Core 
+ - Arrow
+ - Shield
+ - Beam
+ - Meteor shower
+ - Lightning
+ - Gravity ball
+ - Walls
+ - Summon defender golems 
+ - Shockwave 
+- Modifiers
+ - Size
+ - Damage
+ - Speed
+ - Gravity (pulls enemies in)
+ - Multiplier (double the amount, 2 arrows -> 4 arrows)
+ - Poison 
+ - Explosion 
+ - Paralyze 
 
 Bugs Fixed Since Last Sprint:
 Enemies randomly running away from tower.
